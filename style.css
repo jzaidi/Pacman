@@ -1,8 +1,87 @@
-canvas {
-    border: 1px solid black;
-    height: 100%;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Cagliostro');
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
-body{
-    margin: 0;
+.font-button {
+   font-family: 'Press Start 2P', cursive;
+   font-size: 150%;
+}
+.font-footer {
+    font-family: 'Cagliostro', sans-serif
+    font-size: 50%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+body {
+    background-color: black;
+}
+
+body > div {
+    margin: 120px auto;
+    text-align: center;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    -webkit-transform: skew(20deg);
+-moz-transform: skew(20deg);
+-o-transform: skew(20deg);
+transform: skew(20deg);
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* .tile2 {
+    width: 80px;
+    height: 80px;
+
+    display: inline-block;  
+    vertical-align: top; 
+    position: relative; 
+    top: -15px;
+} */
+.wall {
+    background-color: darkslategrey;
+    border: 10px dashed chocolate;
+}
+
+.coin {
+    background-color: red;
+    border-radius: 50%;
+    transform: scale(0.3);
+}
+
+.pacman {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacman.gif');
+}
+.redghost {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanghost.png');
+}
+.pinkghost {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanpink.png');
+}
+.blueghost {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanblue.png');
+}
+.left {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacmanleft.gif');
+}
+.up {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacmanup.gif');
+}
+.down {
+    background-image: url('/Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacmandown.gif');
 }

@@ -88,6 +88,7 @@ function moveGhost(){
   }
 }
 function movePacman(e){
+     e.preventDefault();
     if(e.keyCode == 37) {
       if(getPixel(pacmanx-25, pacmany) != '#000000'){
         pacmanx = pacmanx - 50;
