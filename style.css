@@ -65,23 +65,23 @@ transform: skew(20deg);
 }
 
 .pacman {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacman.gif');
+    background-image: image-url('ezgif.com-pacman.gif');
 }
 .redghost {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanghost.png');
+    background-image: image-url('pacmanghost.png');
 }
 .pinkghost {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanpink.png');
+    background-image: image-url('pacmanpink.png');
 }
 .blueghost {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/pacmanblue.png');
+    background-image: image-url('pacmanblue.png');
 }
 .left {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacmanleft.gif');
+    background-image: image-url('ezgif.com-pacmanleft.gif');
 }
 .up {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacmanup.gif');
+    background-image: image-url('ezgif.com-pacmanup.gif');
 }
 .down {
-    background-image: url('../Users/jaffarzaidi/Galvanize/Projects/PacmanGame/images/ezgif.com-pacman.gif');
+    background-image: image-url('ezgif.com-pacman.gif');
 }
