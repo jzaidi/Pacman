@@ -19,7 +19,6 @@ function pauseAudio() {
   x.pause();
 }
 
-
 var y = document.getElementById("myAudio2");
 
 function playAudio2() {
@@ -29,7 +28,6 @@ function playAudio2() {
 function pauseAudio2() {
   y.pause();
 }
-
 
 var z = document.getElementById("myAudio3");
 
@@ -230,7 +228,7 @@ function moveUp() {
   if (gameData[pacman.y - 1][pacman.x] !== WALL) {
     gameData[pacman.y][pacman.x] = GROUND;
     pacman.y = pacman.y - 1;
-     playAudio2();
+    playAudio2();
     gameData[pacman.y][pacman.x] = PACMAN;
   }
 }
@@ -240,7 +238,7 @@ function moveLeft() {
   if (gameData[pacman.y][pacman.x - 1] !== WALL) {
     gameData[pacman.y][pacman.x] = GROUND;
     pacman.x = pacman.x - 1;
-     playAudio2();
+    playAudio2();
     gameData[pacman.y][pacman.x] = PACMAN;
   }
 }
@@ -250,7 +248,7 @@ function moveRight() {
   if (gameData[pacman.y][pacman.x + 1] !== WALL) {
     gameData[pacman.y][pacman.x] = GROUND;
     pacman.x = pacman.x + 1;
-     playAudio2();
+    playAudio2();
     gameData[pacman.y][pacman.x] = PACMAN;
   }
 }
@@ -278,24 +276,54 @@ function setupKeyboardControls() {
         clearInterval(redGhost);
         alert("You died!");
         location.reload();
+        $(document).ready(function() {
+          var url = window.location.href;
+          console.log(url);
+          if (url.indexOf("#") < 0) {
+            window.location.replace(url + "#");
+          } else {
+            window.location.replace(url);
+          }
+        });
       }
-    }else if (gameData[pacman.x] === gameData[pink_ghost.x]) {
+    } else if (gameData[pacman.x] === gameData[pink_ghost.x]) {
       if (gameData[pacman.y] === gameData[pink_ghost.y]) {
         playAudio3();
         clearInterval(pinkGhost);
         alert("You died!");
         location.reload();
+        $(document).ready(function() {
+          var url = window.location.href;
+          console.log(url);
+          if (url.indexOf("#") < 0) {
+            window.location.replace(url + "#");
+          } else {
+            window.location.replace(url);
+          }
+        });
       }
-    }else if (gameData[pacman.x] === gameData[blue_ghost.x]) {
+    } else if (gameData[pacman.x] === gameData[blue_ghost.x]) {
       if (gameData[pacman.y] === gameData[blue_ghost.y]) {
         playAudio3();
         clearInterval(blueGhost);
         alert("You died!");
         location.reload();
+        $(document).ready(function() {
+          var url = window.location.href;
+          console.log(url);
+          if (url.indexOf("#") < 0) {
+            window.location.replace(url + "#");
+          } else {
+            window.location.replace(url);
+          }
+        });
+
+
       }
     }
   });
 }
+
 
 function main() {
   playAudio();
