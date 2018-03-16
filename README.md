@@ -7,7 +7,7 @@ This is a rendition of Pacman that is still quite a bit far away from being full
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Website
- *[Pacman](https://jzaidi.github.io/Pacman)
+ * [Pacman](https://jzaidi.github.io/Pacman)
 
 ## Built With
 
