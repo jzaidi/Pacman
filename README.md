@@ -15,7 +15,3 @@ This is a rendition of Pacman that is still quite a bit far away from being full
 ## Authors
 
 * **Jaffar Zaidi** [Profile](https://github.com/jzaidi)
-
-## Acknowledgments
-
-* g79 instructors 
